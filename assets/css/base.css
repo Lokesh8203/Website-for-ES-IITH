@@ -1,0 +1,179 @@
+:root
+{
+  --darkgrey : #1a3947; 
+  --grey : #566575;
+  --lightgrey : #797983;
+  --apricot : chocolate;
+  --citrus : #fca26e;
+  --applecore : #ffffff;
+  --white : #ffffff;
+}
+
+.container-blue{
+  margin: 20px 20px;
+  background-color: rgb(216, 211, 211);
+}
+
+.TopContainer
+{
+  padding:100px;
+}
+body{
+
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.card
+{
+  border-radius: 0;
+}
+.icon-nav
+{
+  height: 8vh;
+}
+.icon-foot
+{
+  width: 20vw;
+}
+.main-tool-bar
+{
+  background-color: var(--white);
+  color:var(--white);
+}
+.orange
+{
+    background-color: var(--apricot);
+    color:var(--white);
+}
+/*map*/
+.title-text
+{
+    border-bottom: min(0.5vh, 0.5vw) solid var(--apricot);
+    text-decoration: none;
+    font-size: xx-large;
+    font-weight: 400;
+    color: var(--darkgrey);
+}
+
+.title-text2 {
+  border-bottom: min(0.5vh, 0.5vw) solid var(--apricot);
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--darkgrey);
+}
+
+.link-orange
+{
+  color:var(--apricot);
+}
+.link-orange:hover, .link-orange:active
+{
+  color:var(--citrus);
+}
+.dropdown-menu > li > a:hover {
+  background-image: none;
+  background-color: var(--apricot);
+  color : white;
+}
+.dropdown-menu > li > a:focus {
+  background-image: none;
+  background-color: var(--citrus);
+  color : white;
+}
+/* Scrollbars */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--citrus) var(--white);
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--white);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--citrus);
+    border-radius: 20px;
+    border: 3px solid var(--white);
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px;
+    font-weight: 300;
+    transition: 0.2s ease;
+  }
+
+  .col-md-7 h5, .col-md-5 h5{
+    border-bottom: 2px solid var(--citrus);
+    padding: 4px;
+  }
+
+  footer ul li a:hover {
+    padding-left: 25px;
+  }
+
+  /* for mobile phone */
+  @media(max-width: 500px) {
+
+    .col, .col-md-7 h5{
+      display: block;
+      width: 200%;
+      margin-bottom: 20px;
+    }
+
+    .col ul li a {
+      width: 200%;
+    }
+
+    .col-md-7 .row .col h6{
+      width: 500px;
+    }
+
+    .col img, small {
+      width: 200%;
+    }
+
+    .col-md-5 {
+      width: 100%;
+    }
+  }
+
+  /* for tabs and ipads */
+  @media(max-width: 900px) {
+    .col-md-7 {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--grey);
+    color:var(--citrus);
+    margin: 0px 8px 8px 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social-links a:hover {
+    color: var(--apricot);
+    background-color: #ffffff;
+  }
+
+  #footerbg{
+    background-color: #082a2d;
+  }
